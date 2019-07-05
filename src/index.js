@@ -44,7 +44,7 @@ class ShareCode {
   }
 
   static sanitizeCode(str) {
-    return str.replace(/CSGO|-/g, '');
+    return str.replace(/steam:\/\/rungame\/730\/76561202255233023\/\+csgo_download_match%20|CSGO|-/g, '');
   }
 
   decode() {

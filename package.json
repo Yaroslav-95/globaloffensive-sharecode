@@ -4,7 +4,8 @@
   "description": "Counter Strike: Global Offensive ShareCode decoder",
   "main": "src/index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "eslint": "./node_modules/eslint/bin/eslint.js ./"
   },
   "keywords": [
     "counter-strike",
@@ -13,5 +14,14 @@
     "sharecode"
   ],
   "author": "Yaroslav de la Peña Smirnov",
-  "license": "WTFPL"
+  "license": "WTFPL",
+  "dependencies": {
+    "big-number": "^2.0.0"
+  },
+  "devDependencies": {
+    "@bifot/eslint-config": "^1.0.2",
+    "eslint": "^5.16.0",
+    "eslint-config-airbnb-base": "^13.1.0",
+    "eslint-plugin-import": "^2.17.3"
+  }
 }

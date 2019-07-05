@@ -1,0 +1,7 @@
+{
+  "extends": "@bifot/eslint-config",
+  "rules": {
+    "no-param-reassign": ["error", {"props": false}],
+    "no-plusplus": ["off"]
+  }
+}

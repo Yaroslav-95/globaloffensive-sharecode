@@ -1,0 +1,17 @@
+{
+  "name": "globaloffensive-sharecode",
+  "version": "1.0.0",
+  "description": "Counter Strike: Global Offensive ShareCode decoder",
+  "main": "src/index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "counter-strike",
+    "globaloffensive",
+    "csgo",
+    "sharecode"
+  ],
+  "author": "Yaroslav de la Peña Smirnov",
+  "license": "WTFPL"
+}

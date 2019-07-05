@@ -15,6 +15,10 @@
   ],
   "author": "Yaroslav de la Peña Smirnov",
   "license": "WTFPL",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/Yaroslav-95/globaloffensive-sharecode.git"
+  },
   "dependencies": {
     "big-number": "^2.0.0"
   },

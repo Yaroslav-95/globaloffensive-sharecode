@@ -1,6 +1,6 @@
 {
   "name": "globaloffensive-sharecode",
-  "version": "1.1.0",
+  "version": "1.1.1",
   "description": "Counter Strike: Global Offensive ShareCode decoder",
   "main": "src/index.js",
   "scripts": {

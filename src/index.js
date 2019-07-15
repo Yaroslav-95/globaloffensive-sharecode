@@ -44,10 +44,22 @@ class ShareCode {
   }
 
   static sanitizeCode(str) {
-    return str.replace(/steam:\/\/rungame\/730\/76561202255233023\/\+csgo_download_match%20|CSGO|-/g, '');
+    const code = str.replace(/steam:\/\/rungame\/730\/76561202255233023\/\+csgo_download_match%20|CSGO|-/g, '');
+    const res = /^[a-zA-Z0-9]*$/.exec(code);
+
+    if (res) {
+      if (res[0].length === 25) {
+        return res[0];
+      }
+    }
+
+    return null;
   }
 
   decode() {
+    if (!this.code) {
+      return false;
+    }
     const reader = new ByteReader(this.io);
     const matchId = reader.readInt64;
     const outcomeId = reader.readInt64;
